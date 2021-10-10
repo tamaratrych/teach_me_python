@@ -18,7 +18,13 @@ text = """@*гда я п^ижимал тебя к г^уди св*ей-
 
 crypto_keys = (("К", "@",), ("р", "^",), (",", "-"), ("c", "$"), ("О", "&",), ("Н", "+"), ("о", "*"))
 
-#plen(crypto_keys) - так мы узнаем, сколько замен надо произвести
 a=str(crypto_keys[0][0]).join(text.split(crypto_keys[0][1]))
+a=str(crypto_keys[1][0]).join(a.split(crypto_keys[1][1]))
+a=str(crypto_keys[2][0]).join(a.split(crypto_keys[2][1]))
+a=str(crypto_keys[3][0]).join(a.split(crypto_keys[3][1]))
+a=str(crypto_keys[4][0]).join(a.split(crypto_keys[4][1]))
+a=str(crypto_keys[5][0]).join(a.split(crypto_keys[5][1]))
+a=str(crypto_keys[6][0]).join(a.split(crypto_keys[6][1]))
+
 print(a)
 
