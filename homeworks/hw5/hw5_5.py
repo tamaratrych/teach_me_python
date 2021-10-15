@@ -14,7 +14,7 @@ while flag != 'Q':
     input_numbers = input('Введите числа через пробел\n>>>')
     input_list = input_numbers.strip().split(' ')
     for itm in input_list:
-        if not itm.isdigit():
+        if not isinstance(itm, int):
             if itm == 'Q':
                 flag = itm
                 break
