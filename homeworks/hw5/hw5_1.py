@@ -9,3 +9,8 @@
 - телефон: 89181111111
 - email: test@test.ru
 """
+
+def data_user(name, surname, year_birthday, city, email, tel):
+    print(f'{surname} {name} {year_birthday} года Рождения, проживающий в городе {city}.\nконтактные данные:\n- телефон: {tel}\n- email: {email}')
+
+data_user("Иванов", "Иван Иванович", 1986, "Норильск", "test@test.ru", 89181111111)
