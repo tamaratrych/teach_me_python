@@ -20,13 +20,13 @@ some_builds = [
     [1, 1, 1, 0],
     [1, 1, 1, 1]
 ]
-build =[]
-len_build = len(some_builds)
-for sky in range(len_build):
-    for i in enumerate(some_builds[sky]):
-        if i == 1:
-            build.append(i+1)
-            build.append(len_build - sky)
 
-print(build)
+result = []
+for stage in enumerate(some_builds):
+    if 1 not in stage[1]:
+        continue
+    result += [stage[1].index(1) + 1, len(some_builds) - stage[0]]
+    break
+
+print(result)
 
