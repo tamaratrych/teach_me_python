@@ -25,6 +25,9 @@ second_player = {
 }
 
 def get_users(mode):
+    """
+    This function returns a pair of players depend on mode
+    """
     users = [creat_user(SYMBOLS[0])]
     users.append(second_player[mode](SYMBOLS[1]))
     return users
