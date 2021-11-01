@@ -6,3 +6,5 @@ MODE = {
     "1": "user",
     "2": "comp"
 }
+
+AGREEMENT = ("Y", "N")

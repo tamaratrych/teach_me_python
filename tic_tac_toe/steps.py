@@ -5,13 +5,16 @@ from templates import user_interface
 
 
 def make_step(step_number, user, board):
+    """
+    This function asks the user a step, checks if the user can make this step
+    """
     def get_step(step_number, user):
         while True:
             input_step = user_interface("ask_step", step_number=step_number, name=user["name"]).split(" ")
             try:
                 new_step = tuple(int(input_step[0]), int(input_step[1]))
                 return new_step
-            except ValueError:
+            except (TypeError, IndexError):
                 user_interface("wrong_input")
 
     def check_stepable(new_step):
@@ -29,6 +32,9 @@ def make_step(step_number, user, board):
 
 
 def comp_step(step_number, user, board):
+    """
+    This function makes random step for the computer
+    """
     step = random.choice(possible_steps)
     board[step[0]][step[1]] = user["symbol"]
     user["user_steps"].append(possible_steps.pop(step))
