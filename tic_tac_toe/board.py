@@ -7,9 +7,6 @@ def create_board(size=SIZE_BOARD):
     The size is specified in a constant
     (the size of the matrix is an odd number)
     """
-    # if size & 1:
-        # with open("ttt_log.txt", "a") as file:
-        #     file.write("The size of the board is an even number\n")
     return [[0 for _ in range(size)] for i in range(size)]
 
 
