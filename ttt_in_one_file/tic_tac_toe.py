@@ -241,4 +241,4 @@ def main():
         file.write("Конец игры\n")
 
 
-main()
+#main()
