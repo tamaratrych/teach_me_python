@@ -1,31 +1,21 @@
 from templates import user_interface
 from constants import SYMBOLS
-import  sys
+import sys
 
-
-def creat_user(symbol):
-    return {
-        "name": user_interface("enter_name"),
-        "symbol": symbol,
-        "user_steps": [],
-        "user_mode": "user"
-    }
 
 def creat_user(symbol, player_name):
     user = {
-        #"name": user_interface("enter_name"),
         "symbol": symbol,
         "user_steps": [],
         "user_mode": "user"
     }
     if player_name == "":
         player_name = user_interface("enter_name")
-        user.update(name=player_name)
-    else:
-        user.update(name=player_name)
+    user.update(name=player_name)
     return user
 
-def creat_comp(symbol):
+
+def creat_comp(symbol, player_name=""):
     return {
         "name": "Computer",
         "symbol": symbol,
@@ -34,8 +24,8 @@ def creat_comp(symbol):
     }
 
 second_player = {
-    "user": lambda symbol: creat_user(symbol=SYMBOLS[1]),
-    "comp": lambda symbol: creat_comp(symbol=SYMBOLS[1])
+    "user": lambda symbol, player_name: creat_user(symbol, player_name),
+    "comp": lambda symbol, player_name: creat_comp(symbol, player_name)
 }
 
 def get_users(mode):
@@ -43,12 +33,16 @@ def get_users(mode):
     This function returns a pair of players depend on mode
     """
     player_name = ""
-
     try:
-        if len(sys.argv) == 3:
+        if 5 > len(sys.argv) > 2:
             player_name = sys.argv[2]
     except IndexError:
         player_name = ""
     users = [creat_user(SYMBOLS[0], player_name)]
-    users.append(second_player[mode](SYMBOLS[1]))
+    try:
+        if len(sys.argv) == 4:
+            player_name = sys.argv[3]
+    except IndexError:
+        player_name = ""
+    users.append(second_player[mode](SYMBOLS[1], player_name))
     return users

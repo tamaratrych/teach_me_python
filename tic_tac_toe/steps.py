@@ -13,7 +13,7 @@ def make_step(step_number, user, board, possible_steps):
             try:
                 new_step = tuple(map(lambda x:int(x), input_step))
                 return new_step
-            except (TypeError, IndexError):
+            except (ValueError, IndexError):
                 user_interface("wrong_input")
 
     def check_stepable(new_step):
