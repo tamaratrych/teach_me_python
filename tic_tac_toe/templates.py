@@ -5,14 +5,13 @@ interface_string = {
     "rules": "следуйте инструкциям и наслаждайтесь игрой",
     "hello": "Здравствуй игрок",
     "enter_name": "Введите свое имя\n>>>",
-    "game_type": "С кем вы желаете играть\n{variants}",
-    "ask_step": "Ход #{step_number} игрока {name}",
+    "game_type": "С кем вы желаете играть\n{variants}\n>>>",
+    "ask_step": "Ход #{step_number} игрока {name} ",
     "win": "Победил игрок {name} на ходу #{step_number}",
-    "new_game": "Желаете начать новую игру? {variants}",
+    "new_game": "Желаете начать новую игру? {variants} ",
     "draw": "Ничья победителей нет",
     "wrong_step": "Вы ввели занятую ячейку или ячейку вне игрового поля. Попытайтесь снова.",
     "wrong_input": "Ошибка ввода. Попытайтесь снова.",
-    #"comp_step": "ход компьютера {variants}"
 }
 
 template_variants = {
@@ -21,7 +20,6 @@ template_variants = {
     "win": lambda template, **kwargs: template.format(**kwargs),
     "new_game": lambda template, **kwargs: template.format(variants=AGREEMENT),
     "enter_name": lambda template, **kwargs: template.format(**kwargs),
-    #"comp_step": lambda  template, **kwargs: template.format(**kwargs)
 }
 
 
