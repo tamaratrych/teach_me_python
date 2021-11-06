@@ -1,0 +1,29 @@
+
+Session #1. Start game #1 at 2021-11-07T01:06:24.734634
+Session #1; game #1; player's name Tom; player's step (0, 0)
+Session #1; game #1; player's name Sam; player's step (0, 1)
+Session #1; game #1; player's name Tom; player's step (1, 1)
+Session #1; game #1; player's name Sam; player's step (0, 2)
+Session #1; game #1; player's name Tom; player's step (2, 2)
+Result of the game: Tom is a winner
+Session #1. Finish game #1 at 2021-11-07T01:06:52.636474
+Session #1. Start game #2 at 2021-11-07T01:06:55.857805
+Session #1; game #2; player's name Tom; player's step (0, 0)
+Session #1; game #2; player's name Sam; player's step (0, 1)
+Session #1; game #2; player's name Tom; player's step (0, 2)
+Session #1; game #2; player's name Sam; player's step (1, 1)
+Session #1; game #2; player's name Tom; player's step (2, 1)
+Session #1; game #2; player's name Sam; player's step (2, 0)
+Session #1; game #2; player's name Tom; player's step (1, 2)
+Session #1; game #2; player's name Sam; player's step (2, 2)
+Session #1; game #2; player's name Tom; player's step (1, 0)
+Result of the game: draw
+Session #1. Finish game #2 at 2021-11-07T01:08:21.694465
+Session #2. Start game #1 at 2021-11-07T01:09:11.992377
+Session #2; game #1; player's name Pol; player's step (2, 1)
+Session #2; game #1; player's name Computer; player's step (0, 1)
+Session #2; game #1; player's name Pol; player's step (2, 0)
+Session #2; game #1; player's name Computer; player's step (1, 1)
+Session #2; game #1; player's name Pol; player's step (2, 2)
+Result of the game: Pol is a winner
+Session #2. Finish game #1 at 2021-11-07T01:09:26.914380

@@ -4,14 +4,17 @@ import sys
 from users import get_users
 from templates import user_interface
 from board import create_board, check_victory, print_board
-from constants import MODE, SIZE_BOARD, AGREEMENT, ttt_help
+from constants import MODE, AGREEMENT
 from steps import user_step
+from logging import count_session, log_game, write_in_file
 
 
+@count_session
 def start_game():
     """
-    This function initiates a game: creat a board and defines players
+    This function initiates a game: create a board and defines players
     """
+    # count_session()
     user_interface("rules")
     user_interface("hello")
     board = create_board()
@@ -21,12 +24,18 @@ def start_game():
         if argv in user_step:
             chosen_mode = argv
     except IndexError:
-        mode = user_interface('game_type')
-        chosen_mode = MODE[mode]
+        while True:
+            try:
+                mode = user_interface('game_type')
+                chosen_mode = MODE[mode]
+                break
+            except KeyError:
+                user_interface("wrong_input")
     users = get_users(chosen_mode)
     return (board, users)
 
 
+@log_game
 def game_cycle(board, users, possible_steps):
     """
     This function fills the board with "O" and "X"(alternate steps of the players)
@@ -37,9 +46,13 @@ def game_cycle(board, users, possible_steps):
         print_board(board)
         if check_victory(board):
             user_interface("win", name=user["name"], step_number=num_step)
+            message = f"Result of the game: {user['name']} is a winner\n"
+            write_in_file("game_log", message)
             return None
         if num_step == 9:
             user_interface("draw")
+            message = f"Result of the game: draw\n"
+            write_in_file("game_log", message)
             return None
 
 
@@ -53,26 +66,3 @@ def finish_game():
             user_interface("wrong_input")
             continue
         return agreement
-
-
-def main():
-    try:
-        argv = sys.argv[1]
-        if argv == '-h':
-            ttt_help()
-            return None
-    except IndexError:
-        pass
-    board, users = start_game()
-    possible_steps = [(idx, idy) for idx in range(SIZE_BOARD) for idy in range(SIZE_BOARD)]
-    new_game = "Y"
-    while new_game == "Y":
-        game_cycle(board, users, possible_steps)
-        new_game = finish_game()
-        if new_game == "Y":
-            board = create_board()
-            possible_steps = [(idx, idy) for idx in range(SIZE_BOARD) for idy in range(SIZE_BOARD)]
-
-
-if __name__ == "__main__":
-    main()

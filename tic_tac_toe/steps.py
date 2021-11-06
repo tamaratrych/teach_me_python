@@ -1,8 +1,10 @@
 import random
 
 from templates import user_interface
+from logging import log_step
 
 
+@log_step
 def make_step(step_number, user, board, possible_steps):
     """
     This function asks the user a step, checks if the user can make this step
@@ -30,6 +32,7 @@ def make_step(step_number, user, board, possible_steps):
             flag = False
 
 
+@log_step
 def comp_step(step_number, user, board, possible_steps):
     """
     This function makes random step for the computer
