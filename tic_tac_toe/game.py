@@ -4,9 +4,9 @@ import sys
 from users import get_users
 from templates import user_interface
 from board import create_board, check_victory, print_board
-from constants import MODE, AGREEMENT
+from constants import MODE, AGREEMENT, ttt_help
 from steps import user_step
-from logging import count_session, log_game, write_in_file
+from logging import count_session, log_game, write_in_file, log_step
 
 
 @count_session
@@ -66,3 +66,13 @@ def finish_game():
             user_interface("wrong_input")
             continue
         return agreement
+
+
+def print_help():
+    try:
+        argv = sys.argv[1]
+        if argv == '-h':
+            ttt_help()
+            sys.exit(0)
+    except IndexError:
+        pass

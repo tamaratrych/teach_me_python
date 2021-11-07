@@ -2,6 +2,7 @@ import random
 
 from templates import user_interface
 from logging import log_step
+from constants import SIZE_BOARD
 
 
 @log_step
@@ -46,3 +47,8 @@ user_step = {
     "user": make_step,
     "comp": comp_step
 }
+
+
+def get_empty_steps():
+    possible_steps = [(idx, idy) for idx in range(SIZE_BOARD) for idy in range(SIZE_BOARD)]
+    return possible_steps

@@ -27,3 +27,60 @@ Session #2; game #1; player's name Computer; player's step (1, 1)
 Session #2; game #1; player's name Pol; player's step (2, 2)
 Result of the game: Pol is a winner
 Session #2. Finish game #1 at 2021-11-07T01:09:26.914380
+Session #4. Start game #1 at 2021-11-07T03:10:04.698769
+Session #5. Start game #1 at 2021-11-07T03:10:20.548187
+Session #6. Start game #1 at 2021-11-07T03:10:29.676225
+Session #6; game #1; player's name Tom; player's step (0, 1)
+Session #6; game #1; player's name Computer; player's step (1, 0)
+Session #7. Start game #1 at 2021-11-07T03:10:49.386142
+Session #7; game #1; player's name Tom; player's step (0, 1)
+Session #8. Start game #1 at 2021-11-07T18:27:38.344979
+Session #8; game #1; player's name hg; player's step (1, 1)
+Session #8; game #1; player's name Computer; player's step (0, 0)
+Session #8; game #1; player's name hg; player's step (2, 2)
+Session #8; game #1; player's name Computer; player's step (2, 0)
+Session #8; game #1; player's name hg; player's step (1, 0)
+Session #8; game #1; player's name Computer; player's step (0, 1)
+Session #8; game #1; player's name hg; player's step (2, 1)
+Session #8; game #1; player's name Computer; player's step (1, 2)
+Session #8; game #1; player's name hg; player's step (0, 2)
+Result of the game: draw
+Session #8. Finish game #1 at 2021-11-07T18:28:06.726009
+Session #9. Start game #1 at 2021-11-07T18:28:56.204559
+Session #9; game #1; player's name dfhg; player's step (1, 1)
+Session #9; game #1; player's name srthg; player's step (0, 0)
+Session #9; game #1; player's name dfhg; player's step (0, 1)
+Session #9; game #1; player's name srthg; player's step (0, 2)
+Session #9; game #1; player's name dfhg; player's step (2, 1)
+Result of the game: dfhg is a winner
+Session #9. Finish game #1 at 2021-11-07T18:29:13.588346
+Session #9. Start game #2 at 2021-11-07T18:29:17.108527
+Session #9; game #2; player's name dfhg; player's step (1, 1)
+Session #9; game #2; player's name srthg; player's step (2, 2)
+Session #9; game #2; player's name dfhg; player's step (0, 0)
+Session #9; game #2; player's name srthg; player's step (1, 0)
+Session #9; game #2; player's name dfhg; player's step (1, 2)
+Session #9; game #2; player's name srthg; player's step (0, 1)
+Session #9; game #2; player's name dfhg; player's step (0, 2)
+Session #9; game #2; player's name srthg; player's step (2, 0)
+Session #9; game #2; player's name dfhg; player's step (2, 1)
+Result of the game: draw
+Session #9. Finish game #2 at 2021-11-07T18:29:56.891840
+Session #10. Start game #1 at 2021-11-07T18:35:26.964693
+Session #10; game #1; player's name gfn; player's step (0, 0)
+Session #10; game #1; player's name Computer; player's step (2, 1)
+Session #10; game #1; player's name gfn; player's step (1, 1)
+Session #10; game #1; player's name Computer; player's step (0, 2)
+Session #10; game #1; player's name gfn; player's step (2, 2)
+Result of the game: gfn is a winner
+Session #10. Finish game #1 at 2021-11-07T18:35:34.289805
+Session #11. Start game #1 at 2021-11-07T18:49:02.260809
+Result of the game: Tom is a winner
+Session #18. Start game #1 at 2021-11-07T19:47:41.020210
+Session #18; game #1; player's name gh; player's step (0, 0)
+Session #18; game #1; player's name Computer; player's step (1, 0)
+Session #18; game #1; player's name gh; player's step (1, 1)
+Session #18; game #1; player's name Computer; player's step (0, 2)
+Session #18; game #1; player's name gh; player's step (2, 2)
+Result of the game: gh is a winner
+Session #18. Finish game #1 at 2021-11-07T19:47:51.985503
