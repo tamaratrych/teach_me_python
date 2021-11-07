@@ -151,3 +151,4 @@ cython_debug/
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+/ttt_in_one_file/
