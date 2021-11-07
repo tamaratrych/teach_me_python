@@ -12,8 +12,6 @@ interface_string = {
     "draw": "Ничья победителей нет",
     "wrong_step": "Вы ввели занятую ячейку или ячейку вне игрового поля. Попытайтесь снова.",
     "wrong_input": "Ошибка ввода. Попытайтесь снова.",
-    # "log_game": "Session #{number_current_session}. {extreme_point} game #{num_game} at {dt}\n",
-    # "log_step": "Session #{number_current_session}; game #{num_game}; player's name {name}; player's step {step}\n"
 }
 
 template_variants = {
@@ -22,8 +20,6 @@ template_variants = {
     "win": lambda template, **kwargs: template.format(**kwargs),
     "new_game": lambda template, **kwargs: template.format(variants=AGREEMENT),
     "enter_name": lambda template, **kwargs: template.format(**kwargs),
-    # "log_game": lambda template, **kwargs: template.format(**kwargs),
-    # "log_step": lambda template, **kwargs: template.format(**kwargs),
 }
 
 
