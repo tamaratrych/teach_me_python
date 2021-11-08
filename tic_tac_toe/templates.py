@@ -17,7 +17,6 @@ interface_string = {
 template_variants = {
     "game_type": lambda template, **kwargs: template.format(variants=MODE),
     "ask_step": lambda template, **kwargs: template.format(**kwargs),
-    "win": lambda template, **kwargs: template.format(**kwargs),
     "new_game": lambda template, **kwargs: template.format(variants=AGREEMENT),
     "enter_name": lambda template, **kwargs: template.format(**kwargs),
 }

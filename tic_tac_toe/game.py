@@ -14,16 +14,18 @@ def start_game():
     """
     This function initiates a game: create a board and defines players
     """
-    # count_session()
     user_interface("rules")
     user_interface("hello")
     board = create_board()
     chosen_mode = ""
+    argv = ""
     try:
-        argv = sys.argv[1]
-        if argv in user_step:
-            chosen_mode = argv
+        argv = sys.argv[1].lower()
     except IndexError:
+        pass
+    if argv in user_step:
+        chosen_mode = argv
+    else:
         while True:
             try:
                 mode = user_interface('game_type')
@@ -41,6 +43,7 @@ def game_cycle(board, users, possible_steps):
     This function fills the board with "O" and "X"(alternate steps of the players)
     until the winner will be determined or a draw will be established
     """
+    print_board(board)
     for num_step, user in enumerate(itertools.cycle(users), 1):
         user_step[user["user_mode"]](num_step, user, board, possible_steps)
         print_board(board)
@@ -61,7 +64,7 @@ def finish_game():
     This function restart (revenge) or finish the game
     """
     while True:
-        agreement = user_interface("new_game")
+        agreement = user_interface("new_game").upper()
         if agreement not in AGREEMENT:
             user_interface("wrong_input")
             continue
@@ -76,3 +79,4 @@ def print_help():
             sys.exit(0)
     except IndexError:
         pass
+
