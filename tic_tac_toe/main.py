@@ -1,7 +1,4 @@
-import sys
-
 from game import start_game, game_cycle, finish_game, print_help
-from constants import SIZE_BOARD, ttt_help
 from board import create_board
 from steps import get_empty_steps
 
