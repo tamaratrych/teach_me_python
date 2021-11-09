@@ -1,4 +1,5 @@
 import itertools
+import datetime
 #from itertools import cycle
 import random
 """
@@ -12,7 +13,6 @@ import random
 каждый игрок имеет индивидуальный символ который ставит на свободную ячейку игрового поля
 Победитель определяется по следующим правилам:
 символ игрока заполняет горизонталь, вертикаль или диагональ
-
 возможный исход игры когда нет победителя
 """
 # TODO: Играть с компуктером
@@ -124,15 +124,21 @@ def game(users: list, board):
             x, y = int(new_step[0]), int(new_step[1])
             if step_ability(x, y):
                 board[x][y] = user
+                with open("ttt_log.txt", "a") as file:
+                    file.write(f'{user} на ходу #{str(n)} сделал шаг {str(x)}, {str(y)}\n')
                 break
             else:
                 user_interface("wrong_step")
                 continue
         if matrix_match(board):
             user_interface("win", name=user, step_number=int(n))
+            with open("ttt_log.txt", "a") as file:
+                file.write(f'{user} победил на ходу #{str(n)}\n')
             break
         if chek_line(board):
             user_interface("draw")
+            with open("ttt_log.txt", "a") as file:
+                file.write("Игра закончилась ничьей\n")
             break
         n += 0.5
 
@@ -189,6 +195,8 @@ def game_comp_usr(users, board):
                 x, y = int(new_step[0]), int(new_step[1])
                 if step_ability(x, y):
                     board[x][y] = user
+                    with open("ttt_log.txt", "a") as file:
+                        file.write(f'{user} на ходу #{str(n)} сделал шаг {str(x)}, {str(y)}\n')
                     break
                 else:
                     user_interface("wrong_step")
@@ -208,6 +216,10 @@ def game_comp_usr(users, board):
 
 
 def main():
+    now = datetime.datetime.now()
+    with open("ttt_log.txt", "w") as file:
+        file.write(str(now))
+        file.write("Начало игры\n")
     user_interface("rules")
     new_game = "Y"
     while new_game == "Y":
@@ -223,11 +235,10 @@ def main():
         else:
             game_comp_usr(user_names, board)
         new_game = user_interface("new_game")
+    now = datetime.datetime.now()
+    with open("ttt_log.txt", "a") as file:
+        file.write(str(now))
+        file.write("Конец игры\n")
 
 
-
-main()
-
-
-
-#game_comp_usr(["Sam", "computer"], board)
+#main()
