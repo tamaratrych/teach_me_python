@@ -15,7 +15,7 @@ def get_num_session():
     try:
         with open("number_session", "r", encoding="UTF-8") as file:
             num_session = str(int(file.read()) + 1)
-    except FileNotFoundError:
+    except (FileNotFoundError, ValueError):#may be better don't use ValueError ebnumeration restarts
         num_session = "1"
     return num_session
 
