@@ -21,7 +21,8 @@ class Player():
         return random.choice(self.NAMES)
 
     def make_step(self, board) -> "tuple[int, int]":
-        return random.choice(board.all_steps.difference(board.done_steps))
+        step = random.choice(list(board.all_steps.difference(board.done_steps)))
+        return step
 
 
 class User(Player):
@@ -33,7 +34,7 @@ class User(Player):
 
     def make_step(self, board) -> "tuple[int, int]":
         while True:
-            step = input("Сделайте шаг: введите коортинаты через пробел\n").split(" ")
+            step = input(f"Ход игрока {self.name}. Сделайте шаг: введите координаты через пробел\n").split(" ")
             try:
                 step = int(step[0]), int(step[1])
                 if step in board.all_steps.difference(board.done_steps):
@@ -45,6 +46,9 @@ class User(Player):
 
 
 # b = Board(3)
-# p = User("x")
-#print(p.name)
-# p.make_step(b)
+# # p = User("x")
+# #print(p.name)
+# # p.make_step(b)
+# p = Player("x")
+# a = p.make_step(b)
+# print(a)

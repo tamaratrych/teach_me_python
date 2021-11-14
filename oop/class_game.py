@@ -1,9 +1,11 @@
 import sys
+import itertools
 
 
 class Game():
 
     MODE = {"1": "user", "2": "comp"}
+    AGREEMENT = ("Y", "N")
     chosen_mode = None
 
     def hello(self):
@@ -18,36 +20,40 @@ class Game():
         if argv in self.MODE.values():
             self.chosen_mode = argv
         else:
+            mode = "\n".join(f"{key}: {value}" for key, value in self.MODE.items())
             while True:
                 try:
-                    self.chosen_mode = self.MODE[input(f"С кем хотите играть?\n{self.MODE}")]
+                    self.chosen_mode = self.MODE[input(f"С кем хотите играть?\n{mode}\n>>>")]
                     break
                 except KeyError:
                     print("Некорректный вводю Попробуйте еще раз.")
 
-    # def game_cycle(board, users, possible_steps):
-    #     print_board(board)
-    #     for num_step, user in enumerate(itertools.cycle(users), 1):
-    #         user_step[user["user_mode"]](num_step, user, board, possible_steps)
-    #         print_board(board)
-    #         if check_victory(board):
-    #             user_interface("win", name=user["name"], step_number=num_step)
-    #             message = f"Result of the game: {user['name']} is a winner\n"
-    #             write_in_file("game_log", message)
-    #             return None
-    #         if num_step == 9:
-    #             user_interface("draw")
-    #             message = f"Result of the game: draw\n"
-    #             write_in_file("game_log", message)
-    #             return None
-    #
-    # def finish_game(self):
-    #     while True:
-    #         agreement = user_interface("new_game").upper()
-    #         if agreement not in AGREEMENT:
-    #             user_interface("wrong_input")
-    #             continue
-    #         return agreement
+    def game_cycle(self, board, users, logging):
+        board.print_board()
+        for num_step, user in enumerate(itertools.cycle(users), 1):
+            step = user.make_step(board)
+            board.add_step(step, user)
+            logging.log_step(user, step)
+            board.print_board()
+            if board.check(user):
+                print(f"Победил {user.name} на шаге #{num_step}")
+                message = f"Result of the game: {user.name} is a winner\n"
+                logging.write_in_file(logging.game_log, message)
+                return None
+            if num_step == 9:
+                print("Ничья")
+                message = f"Result of the game: draw\n"
+                logging.write_in_file(logging.game_log, message)
+                return None
+
+    def finish_game(self):
+        agreement_str = ", ".join(self.AGREEMENT)
+        while True:
+            play_again = input(f"Желаете сыграть еще раз? {agreement_str}\n>>> ").upper()
+            if play_again not in self.AGREEMENT:
+                print("Некорректный ввод. Попробуйте еще раз.")
+                continue
+            return play_again
 
     def print_help(self):
         try:
@@ -57,7 +63,3 @@ class Game():
                 sys.exit(0)
         except IndexError:
             pass
-
-# h = Game()
-# h.chose_mode
-# h.

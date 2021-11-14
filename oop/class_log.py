@@ -4,10 +4,10 @@ from _datetime import datetime
 
 class Log():
     dirname = os.path.dirname(__file__)
-    game_log = os.path.join(dirname, 'logging.py')
-    num_session = os.path.join(dirname, 'num_session.py')
+    game_log = os.path.join(dirname, 'logging.txt')
+    num_session = os.path.join(dirname, 'num_session.txt')
 
-    number_current_session = None
+    number_current_session = ""
     number_game = 1
 
     def write_in_file(self, file_name, message, mode="a"):
@@ -25,9 +25,8 @@ class Log():
             self.number_current_session = "1"
 
     def count_session(self):
-        num_session = self.get_num_session()
-        self.write_in_file(num_session, num_session, "w")
-        self.number_current_session = num_session
+        self.get_num_session()
+        self.write_in_file(self.num_session, self.number_current_session, "w")
 
     def log_start_game(self):
         message = f"Session #{self.number_current_session}. Start game #{self.number_game} at {datetime.now().isoformat()}\n"
