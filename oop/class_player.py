@@ -1,5 +1,6 @@
 import random
-from class_board import Board
+#from class_board import Board
+from itertools import chain
 
 class Player():
 
@@ -21,7 +22,7 @@ class Player():
         return random.choice(self.NAMES)
 
     def make_step(self, board) -> "tuple[int, int]":
-        step = random.choice(list(board.all_steps.difference(board.done_steps)))
+        step = random.choice(list(board.all_steps.difference(chain.from_iterable(board.done_steps.values()))))
         return step
 
 
@@ -37,7 +38,7 @@ class User(Player):
             step = input(f"Ход игрока {self.name}. Сделайте шаг: введите координаты через пробел\n").split(" ")
             try:
                 step = int(step[0]), int(step[1])
-                if step in board.all_steps.difference(board.done_steps):
+                if step in board.all_steps.difference(chain.from_iterable(board.done_steps.values())):
                     return step
                 print("Вы ввели занятую ячейку или ячейку вне игрового поля. Попробуйте еще раз.")
                 continue
