@@ -35,9 +35,6 @@ class Board:
         print(first_line, "\n", *body_board, last_line)
 
     def add_step(self, step: "tuple[int, int]", user):
-        # if step in self.all_steps.difference(self.done_steps):
-        #     self.done_steps[user.symbol].add(step)
-        #     self.ttt_board[step[0]][step[1]] = user.symbol
         self.done_steps[user.symbol].add(step)
         self.ttt_board[step[0]][step[1]] = user.symbol
 
@@ -63,10 +60,3 @@ class Board:
 
         for itm in horizontals_verticals:
             yield from itm
-
-
-    # def steps_init(self, users):
-    #     result = {user.symbol: set() for user in users}
-    #     return result
-    #
-    # made_steps = self.steps_init(users)

@@ -26,7 +26,7 @@ class Game():
                     self.chosen_mode = self.MODE[input(f"С кем хотите играть?\n{mode}\n>>>")]
                     break
                 except KeyError:
-                    print("Некорректный вводю Попробуйте еще раз.")
+                    print("Некорректный ввод. Попробуйте еще раз.")
 
     def game_cycle(self, board, users, logging):
         board.print_board()
