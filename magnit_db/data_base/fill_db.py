@@ -9,4 +9,4 @@ def fill_data(session, promo_dict):
         if count == 10:
             session.commit()
             count = 0
-    session.commit()
+        session.commit()

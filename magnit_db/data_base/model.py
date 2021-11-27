@@ -12,4 +12,4 @@ class MagnitPromo(Base):
     __tablename__ = "magnit_promo"
     id = Column(Integer, primary_key=True, autoincrement=True)
     promo_url = Column(String, unique=True, nullable=False)
-    promo_title = Column(String, unique=True, nullable=True)
+    promo_title = Column(String, unique=False, nullable=True)
