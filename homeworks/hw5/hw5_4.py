@@ -22,6 +22,6 @@ def my_pow(x, y):
     result = 1 / delimiter
     return result
 
-result = my_pow('5', '-0')
+result = my_pow('5', '-2')
 
 print(result)

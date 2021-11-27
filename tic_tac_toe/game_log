@@ -1,0 +1,321 @@
+
+Session #1. Start game #1 at 2021-11-07T01:06:24.734634
+Session #1; game #1; player's name Tom; player's step (0, 0)
+Session #1; game #1; player's name Sam; player's step (0, 1)
+Session #1; game #1; player's name Tom; player's step (1, 1)
+Session #1; game #1; player's name Sam; player's step (0, 2)
+Session #1; game #1; player's name Tom; player's step (2, 2)
+Result of the game: Tom is a winner
+Session #1. Finish game #1 at 2021-11-07T01:06:52.636474
+Session #1. Start game #2 at 2021-11-07T01:06:55.857805
+Session #1; game #2; player's name Tom; player's step (0, 0)
+Session #1; game #2; player's name Sam; player's step (0, 1)
+Session #1; game #2; player's name Tom; player's step (0, 2)
+Session #1; game #2; player's name Sam; player's step (1, 1)
+Session #1; game #2; player's name Tom; player's step (2, 1)
+Session #1; game #2; player's name Sam; player's step (2, 0)
+Session #1; game #2; player's name Tom; player's step (1, 2)
+Session #1; game #2; player's name Sam; player's step (2, 2)
+Session #1; game #2; player's name Tom; player's step (1, 0)
+Result of the game: draw
+Session #1. Finish game #2 at 2021-11-07T01:08:21.694465
+Session #2. Start game #1 at 2021-11-07T01:09:11.992377
+Session #2; game #1; player's name Pol; player's step (2, 1)
+Session #2; game #1; player's name Computer; player's step (0, 1)
+Session #2; game #1; player's name Pol; player's step (2, 0)
+Session #2; game #1; player's name Computer; player's step (1, 1)
+Session #2; game #1; player's name Pol; player's step (2, 2)
+Result of the game: Pol is a winner
+Session #2. Finish game #1 at 2021-11-07T01:09:26.914380
+Session #4. Start game #1 at 2021-11-07T03:10:04.698769
+Session #5. Start game #1 at 2021-11-07T03:10:20.548187
+Session #6. Start game #1 at 2021-11-07T03:10:29.676225
+Session #6; game #1; player's name Tom; player's step (0, 1)
+Session #6; game #1; player's name Computer; player's step (1, 0)
+Session #7. Start game #1 at 2021-11-07T03:10:49.386142
+Session #7; game #1; player's name Tom; player's step (0, 1)
+Session #8. Start game #1 at 2021-11-07T18:27:38.344979
+Session #8; game #1; player's name hg; player's step (1, 1)
+Session #8; game #1; player's name Computer; player's step (0, 0)
+Session #8; game #1; player's name hg; player's step (2, 2)
+Session #8; game #1; player's name Computer; player's step (2, 0)
+Session #8; game #1; player's name hg; player's step (1, 0)
+Session #8; game #1; player's name Computer; player's step (0, 1)
+Session #8; game #1; player's name hg; player's step (2, 1)
+Session #8; game #1; player's name Computer; player's step (1, 2)
+Session #8; game #1; player's name hg; player's step (0, 2)
+Result of the game: draw
+Session #8. Finish game #1 at 2021-11-07T18:28:06.726009
+Session #9. Start game #1 at 2021-11-07T18:28:56.204559
+Session #9; game #1; player's name dfhg; player's step (1, 1)
+Session #9; game #1; player's name srthg; player's step (0, 0)
+Session #9; game #1; player's name dfhg; player's step (0, 1)
+Session #9; game #1; player's name srthg; player's step (0, 2)
+Session #9; game #1; player's name dfhg; player's step (2, 1)
+Result of the game: dfhg is a winner
+Session #9. Finish game #1 at 2021-11-07T18:29:13.588346
+Session #9. Start game #2 at 2021-11-07T18:29:17.108527
+Session #9; game #2; player's name dfhg; player's step (1, 1)
+Session #9; game #2; player's name srthg; player's step (2, 2)
+Session #9; game #2; player's name dfhg; player's step (0, 0)
+Session #9; game #2; player's name srthg; player's step (1, 0)
+Session #9; game #2; player's name dfhg; player's step (1, 2)
+Session #9; game #2; player's name srthg; player's step (0, 1)
+Session #9; game #2; player's name dfhg; player's step (0, 2)
+Session #9; game #2; player's name srthg; player's step (2, 0)
+Session #9; game #2; player's name dfhg; player's step (2, 1)
+Result of the game: draw
+Session #9. Finish game #2 at 2021-11-07T18:29:56.891840
+Session #10. Start game #1 at 2021-11-07T18:35:26.964693
+Session #10; game #1; player's name gfn; player's step (0, 0)
+Session #10; game #1; player's name Computer; player's step (2, 1)
+Session #10; game #1; player's name gfn; player's step (1, 1)
+Session #10; game #1; player's name Computer; player's step (0, 2)
+Session #10; game #1; player's name gfn; player's step (2, 2)
+Result of the game: gfn is a winner
+Session #10. Finish game #1 at 2021-11-07T18:35:34.289805
+Session #11. Start game #1 at 2021-11-07T18:49:02.260809
+Result of the game: Tom is a winner
+Session #18. Start game #1 at 2021-11-07T19:47:41.020210
+Session #18; game #1; player's name gh; player's step (0, 0)
+Session #18; game #1; player's name Computer; player's step (1, 0)
+Session #18; game #1; player's name gh; player's step (1, 1)
+Session #18; game #1; player's name Computer; player's step (0, 2)
+Session #18; game #1; player's name gh; player's step (2, 2)
+Result of the game: gh is a winner
+Session #18. Finish game #1 at 2021-11-07T19:47:51.985503
+Session #21. Start game #1 at 2021-11-08T23:04:59.535011
+Session #21; game #1; player's name ubghk; player's step (0, 0)
+Session #22. Start game #1 at 2021-11-08T23:05:17.523217
+Session #22; game #1; player's name df; player's step (2, 0)
+Session #22; game #1; player's name Computer; player's step (2, 2)
+Session #23. Start game #1 at 2021-11-08T23:08:08.531699
+Session #24. Start game #1 at 2021-11-08T23:16:50.388964
+Session #24; game #1; player's name cvbh; player's step (0, 0)
+Session #24; game #1; player's name Computer; player's step (1, 1)
+Session #24; game #1; player's name cvbh; player's step (0, 1)
+Session #24; game #1; player's name Computer; player's step (2, 0)
+Session #24; game #1; player's name cvbh; player's step (0, 2)
+Result of the game: cvbh is a winner
+Session #24. Finish game #1 at 2021-11-08T23:17:11.177304
+Session #26. Start game #1 at 2021-11-08T23:18:35.348172
+Session #26; game #1; player's name fgh; player's step (2, 0)
+Session #26; game #1; player's name Computer; player's step (0, 1)
+Session #26; game #1; player's name fgh; player's step (1, 1)
+Session #26; game #1; player's name Computer; player's step (0, 2)
+Session #27. Start game #1 at 2021-11-08T23:18:59.463134
+Session #28. Start game #1 at 2021-11-08T23:24:33.429049
+Session #28; game #1; player's name ghjk; player's step (0, 0)
+Session #28; game #1; player's name Computer; player's step (2, 1)
+Session #28; game #1; player's name ghjk; player's step (1, 1)
+Session #28; game #1; player's name Computer; player's step (1, 2)
+Session #28; game #1; player's name ghjk; player's step (2, 2)
+Result of the game: ghjk is a winner
+Session #28. Finish game #1 at 2021-11-08T23:24:45.260557
+Session #29. Start game #1 at 2021-11-08T23:30:40.251821
+Session #29; game #1; player's name hgf; player's step (0, 0)
+Session #29; game #1; player's name Computer; player's step (2, 2)
+Session #29; game #1; player's name hgf; player's step (1, 1)
+Session #29; game #1; player's name Computer; player's step (0, 2)
+Session #29; game #1; player's name hgf; player's step (1, 0)
+Session #29; game #1; player's name Computer; player's step (1, 2)
+Result of the game: Computer is a winner
+Session #29. Finish game #1 at 2021-11-08T23:31:17.083420
+Session #29. Start game #2 at 2021-11-08T23:31:17.083652
+Session #30. Start game #1 at 2021-11-08T23:38:46.899396
+Session #30; game #1; player's name ghui; player's step (0, 0)
+Session #30; game #1; player's name Computer; player's step (1, 0)
+Session #30; game #1; player's name ghui; player's step (1, 1)
+Session #30; game #1; player's name Computer; player's step (0, 2)
+Session #30; game #1; player's name ghui; player's step (2, 2)
+Result of the game: ghui is a winner
+Session #30. Finish game #1 at 2021-11-08T23:38:56.527032
+Session #31. Start game #1 at 2021-11-08T23:40:08.904054
+Session #31; game #1; player's name df; player's step (0, 0)
+Session #31; game #1; player's name Computer; player's step (2, 1)
+Session #31; game #1; player's name df; player's step (1, 1)
+Session #31; game #1; player's name Computer; player's step (0, 1)
+Session #31; game #1; player's name df; player's step (2, 2)
+Result of the game: df is a winner
+Session #31. Finish game #1 at 2021-11-08T23:40:16.774728
+Session #32. Start game #1 at 2021-11-08T23:42:51.737943
+Session #32; game #1; player's name fgh; player's step (0, 0)
+Session #32; game #1; player's name Computer; player's step (2, 2)
+Session #32; game #1; player's name fgh; player's step (1, 1)
+Session #32; game #1; player's name Computer; player's step (0, 2)
+Session #32; game #1; player's name fgh; player's step (1, 0)
+Session #32; game #1; player's name Computer; player's step (2, 1)
+Session #32; game #1; player's name fgh; player's step (2, 0)
+Result of the game: fgh is a winner
+Session #32. Finish game #1 at 2021-11-08T23:43:06.680709
+Session #33. Start game #1 at 2021-11-08T23:46:14.883235
+Session #33; game #1; player's name vghj; player's step (0, 0)
+Session #33; game #1; player's name Computer; player's step (1, 1)
+Session #33; game #1; player's name vghj; player's step (1, 0)
+Session #33; game #1; player's name Computer; player's step (2, 1)
+Session #33; game #1; player's name vghj; player's step (2, 0)
+Result of the game: vghj is a winner
+Session #33. Finish game #1 at 2021-11-08T23:46:24.599904
+Session #34. Start game #1 at 2021-11-08T23:47:52.802547
+Session #34; game #1; player's name fgb; player's step (0, 0)
+Session #34; game #1; player's name Computer; player's step (1, 1)
+Session #34; game #1; player's name fgb; player's step (1, 0)
+Session #34; game #1; player's name Computer; player's step (0, 1)
+Session #34; game #1; player's name fgb; player's step (2, 0)
+Result of the game: fgb is a winner
+Session #34. Finish game #1 at 2021-11-08T23:48:00.957849
+Session #35. Start game #1 at 2021-11-08T23:49:47.383708
+Session #35; game #1; player's name xc; player's step (0, 0)
+Session #35; game #1; player's name Computer; player's step (0, 2)
+Session #35; game #1; player's name xc; player's step (1, 1)
+Session #35; game #1; player's name Computer; player's step (2, 1)
+Session #35; game #1; player's name xc; player's step (2, 2)
+Result of the game: xc is a winner
+Session #35. Finish game #1 at 2021-11-08T23:49:57.834439
+Session #35. Start game #2 at 2021-11-08T23:50:02.504777
+Session #35; game #2; player's name xc; player's step (2, 2)
+Session #35; game #2; player's name Computer; player's step (1, 2)
+Session #36. Start game #1 at 2021-11-08T23:51:38.935211
+Session #36; game #1; player's name g; player's step (0, 0)
+Session #36; game #1; player's name Computer; player's step (1, 2)
+Session #36; game #1; player's name g; player's step (1, 1)
+Session #36; game #1; player's name Computer; player's step (0, 1)
+Session #36; game #1; player's name g; player's step (2, 2)
+Result of the game: g is a winner
+Session #36. Finish game #1 at 2021-11-08T23:51:50.661892
+Session #37. Start game #1 at 2021-11-08T23:52:51.795785
+Session #37; game #1; player's name fgh; player's step (0, 0)
+Session #37; game #1; player's name Computer; player's step (2, 0)
+Session #37; game #1; player's name fgh; player's step (1, 1)
+Session #37; game #1; player's name Computer; player's step (0, 2)
+Session #37; game #1; player's name fgh; player's step (2, 2)
+Result of the game: fgh is a winner
+Session #37. Finish game #1 at 2021-11-08T23:53:01.472091
+Session #38. Start game #1 at 2021-11-08T23:54:35.511221
+Session #38; game #1; player's name nh; player's step (0, 0)
+Session #38; game #1; player's name Computer; player's step (2, 2)
+Session #38; game #1; player's name nh; player's step (1, 0)
+Session #38; game #1; player's name Computer; player's step (2, 1)
+Session #38; game #1; player's name nh; player's step (2, 0)
+Result of the game: nh is a winner
+Session #38. Finish game #1 at 2021-11-08T23:54:49.727969
+Session #38. Start game #2 at 2021-11-08T23:54:55.246350
+Session #38; game #2; player's name nh; player's step (1, 1)
+Session #38; game #2; player's name Computer; player's step (2, 0)
+Session #38; game #2; player's name nh; player's step (0, 0)
+Session #38; game #2; player's name Computer; player's step (1, 2)
+Session #38; game #2; player's name nh; player's step (2, 2)
+Result of the game: nh is a winner
+Session #38. Finish game #2 at 2021-11-08T23:55:20.325123
+Session #39. Start game #1 at 2021-11-08T23:57:16.639154
+Session #39; game #1; player's name n; player's step (0, 0)
+Session #39; game #1; player's name Computer; player's step (2, 2)
+Session #39; game #1; player's name n; player's step (1, 0)
+Session #39; game #1; player's name Computer; player's step (2, 0)
+Session #39; game #1; player's name n; player's step (0, 1)
+Session #39; game #1; player's name Computer; player's step (2, 1)
+Result of the game: Computer is a winner
+Session #39. Finish game #1 at 2021-11-08T23:57:29.251017
+Session #40. Start game #1 at 2021-11-08T23:57:48.271394
+Session #40; game #1; player's name bn; player's step (0, 0)
+Session #40; game #1; player's name Computer; player's step (0, 2)
+Session #40; game #1; player's name bn; player's step (1, 1)
+Session #40; game #1; player's name Computer; player's step (1, 2)
+Session #40; game #1; player's name bn; player's step (2, 2)
+Result of the game: bn is a winner
+Session #40. Finish game #1 at 2021-11-08T23:58:00.973198
+Session #41. Start game #1 at 2021-11-09T00:02:20.364866
+Session #41; game #1; player's name gh; player's step (0, 0)
+Session #41; game #1; player's name Computer; player's step (2, 0)
+Session #41; game #1; player's name gh; player's step (1, 1)
+Session #41; game #1; player's name Computer; player's step (1, 0)
+Session #41; game #1; player's name gh; player's step (2, 2)
+Result of the game: gh is a winner
+Session #41. Finish game #1 at 2021-11-09T00:02:28.293565
+Session #41. Start game #2 at 2021-11-09T00:02:32.066230
+Session #42. Start game #1 at 2021-11-09T00:04:17.800386
+Session #42; game #1; player's name gh; player's step (0, 0)
+Session #42; game #1; player's name Computer; player's step (2, 2)
+Session #42; game #1; player's name gh; player's step (1, 0)
+Session #42; game #1; player's name Computer; player's step (1, 1)
+Session #42; game #1; player's name gh; player's step (2, 0)
+Result of the game: gh is a winner
+Session #42. Finish game #1 at 2021-11-09T00:04:26.353550
+Session #43. Start game #1 at 2021-11-09T00:05:15.268226
+Session #43; game #1; player's name dfb; player's step (0, 0)
+Session #43; game #1; player's name Computer; player's step (2, 2)
+Session #43; game #1; player's name dfb; player's step (1, 0)
+Session #43; game #1; player's name Computer; player's step (1, 1)
+Session #43; game #1; player's name dfb; player's step (2, 0)
+Session #44. Start game #1 at 2021-11-09T00:08:02.798393
+Session #44; game #1; player's name fgb; player's step (0, 0)
+Session #44; game #1; player's name Computer; player's step (2, 0)
+Session #44; game #1; player's name fgb; player's step (1, 1)
+Session #44; game #1; player's name Computer; player's step (1, 2)
+Session #44; game #1; player's name fgb; player's step (2, 2)
+Result of the game: fgb is a winner
+Session #44. Finish game #1 at 2021-11-09T00:08:12.929696
+Session #44. Start game #2 at 2021-11-09T00:08:14.505151
+Session #44; game #2; player's name fgb; player's step (1, 1)
+Session #44; game #2; player's name Computer; player's step (2, 0)
+Session #44; game #2; player's name fgb; player's step (2, 2)
+Session #44; game #2; player's name Computer; player's step (1, 2)
+Session #44; game #2; player's name fgb; player's step (0, 0)
+Result of the game: fgb is a winner
+Session #44. Finish game #2 at 2021-11-09T00:08:34.899807
+Session #44. Start game #3 at 2021-11-09T00:08:38.724113
+Session #45. Start game #1 at 2021-11-09T00:11:06.179853
+Session #45; game #1; player's name fg; player's step (0, 0)
+Session #45; game #1; player's name Computer; player's step (1, 2)
+Session #45; game #1; player's name fg; player's step (1, 1)
+Session #45; game #1; player's name Computer; player's step (0, 2)
+Session #45; game #1; player's name fg; player's step (2, 2)
+Result of the game: fg is a winner
+Session #45. Finish game #1 at 2021-11-09T00:11:14.769558
+Session #45. Start game #2 at 2021-11-09T00:11:16.334411
+Session #45; game #2; player's name fg; player's step (2, 2)
+Session #45; game #2; player's name Computer; player's step (2, 1)
+Session #45; game #2; player's name fg; player's step (1, 1)
+Session #45; game #2; player's name Computer; player's step (1, 0)
+Session #45; game #2; player's name fg; player's step (0, 0)
+Result of the game: fg is a winner
+Session #45. Finish game #2 at 2021-11-09T00:11:23.778659
+Session #46. Start game #1 at 2021-11-09T00:11:47.229821
+Session #46; game #1; player's name vgh; player's step (0, 0)
+Session #46; game #1; player's name Computer; player's step (1, 2)
+Session #46; game #1; player's name vgh; player's step (1, 1)
+Session #46; game #1; player's name Computer; player's step (0, 2)
+Session #46; game #1; player's name vgh; player's step (2, 2)
+Result of the game: vgh is a winner
+Session #46. Finish game #1 at 2021-11-09T00:11:54.780950
+Session #46. Start game #2 at 2021-11-09T00:11:56.254940
+Session #46; game #2; player's name vgh; player's step (1, 1)
+Session #46; game #2; player's name Computer; player's step (0, 0)
+Session #46; game #2; player's name vgh; player's step (0, 2)
+Session #46; game #2; player's name Computer; player's step (1, 2)
+Session #46; game #2; player's name vgh; player's step (2, 0)
+Result of the game: vgh is a winner
+Session #46. Finish game #2 at 2021-11-09T00:12:06.092735
+Session #48. Start game #1 at 2021-11-09T00:12:26.119860
+Session #48; game #1; player's name cv; player's step (0, 0)
+Session #48; game #1; player's name fghjk; player's step (0, 1)
+Session #48; game #1; player's name cv; player's step (1, 0)
+Session #48; game #1; player's name fghjk; player's step (2, 0)
+Session #48; game #1; player's name cv; player's step (1, 1)
+Session #48; game #1; player's name fghjk; player's step (1, 2)
+Session #48; game #1; player's name cv; player's step (2, 1)
+Session #48; game #1; player's name fghjk; player's step (2, 2)
+Session #48; game #1; player's name cv; player's step (0, 2)
+Result of the game: draw
+Session #48. Finish game #1 at 2021-11-09T00:14:01.964727
+Session #48. Start game #2 at 2021-11-09T00:14:05.016587
+Session #48; game #2; player's name cv; player's step (1, 1)
+Session #49. Start game #1 at 2021-11-09T00:14:40.603486
+Session #49; game #1; player's name vbgh; player's step (0, 0)
+Session #49; game #1; player's name vbgh; player's step (0, 1)
+Session #49; game #1; player's name vbgh; player's step (1, 1)
+Session #49; game #1; player's name vbgh; player's step (0, 2)
+Session #49; game #1; player's name vbgh; player's step (2, 2)
+Result of the game: vbgh is a winner
+Session #49. Finish game #1 at 2021-11-09T00:14:52.452048
+Session #1. Start game #1 at 2021-11-09T20:21:16.327364
