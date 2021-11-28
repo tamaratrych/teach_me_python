@@ -1,6 +1,6 @@
 import random
 
-from data_base import models
+import models
 import data
 
 
@@ -29,25 +29,29 @@ def fill_articles(session):
     for author in range(100):
         num_articles = random.randint(50, 100)
         for itm in range(num_articles):
-            article_itm = models.Article(title=f'{data.title_article[itm]} {data.title_article[random.randint(0, 100)]}',
-            author_id=author, blog_id=author)
-            session.add(article_itm)
+            num_tags = random.randint(1, 4)
+            for i in range(num_tags):
+                tag = random.randint(0, 30)
+                article_itm = models.Article(title=f'{data.title_article[itm]} {data.title_article[itm+tag]}',
+                                             author_id=author, blog_id=author, tag_id=tag)
+                session.add(article_itm)
     session.commit()
 
 
-def fill_article_tag(session):
-    num_articles = models.Article.count_articles(session)
-    for article in range(num_articles):
-        num_tags = random.randint(3, 10)
-        tags = set()
-        for itm in range(num_tags):
-            if itm not in tags:
-                article_tag_itm = models._article_tag(article_id=article, tag_id=itm)
-                tags.add(itm)
-            else:
-                continue
-            session.add(article_tag_itm)
-    session.commit()
+# def fill_article_tag(session):
+#     num_articles = models.Article.count_articles(session)
+#     for article in range(num_articles):
+#         num_tags = random.randint(3, 10)
+#         tags = set()
+#         for itm in range(num_tags):
+#             if itm not in tags:
+#                 article_tag_itm = models._article_tag(article_id=article, tag_id=itm)
+#                 tags.add(itm)
+#             else:
+#                 continue
+#             session.add(article_tag_itm)
+#             tags = set()
+#     session.commit()
 
 
 def fill_db(session):
@@ -55,5 +59,5 @@ def fill_db(session):
     fill_authors(session)
     fill_tags(session)
     fill_articles(session)
-    fill_article_tag(session)
+   # fill_article_tag(session)
 

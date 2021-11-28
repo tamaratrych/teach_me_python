@@ -46,11 +46,13 @@ class Article(Base):
     title = Column(String(50), unique=False)
     blog_id = Column(Integer, ForeignKey("blog.id"), nullable=False)
     author_id = Column(Integer, ForeignKey("author.id"), nullable=False)
+    tag_id = Column(Integer, ForeignKey("tag.id"), nullable=False)
     author = relationship(Author, backref='articles')
     tags = relationship("Tag", secondary=_article_tag, backref='articles')
 
+    @classmethod
     def count_articles(self, session):
-        return session.query(Article.id).count()
+        return session.query(self.id).count()
 
 
 class Blog(Base):
