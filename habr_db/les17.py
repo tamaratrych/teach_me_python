@@ -3,6 +3,9 @@ import typing
 from datetime import datetime
 from urllib.parse import urljoin
 
+from constants import COMPLETE_STATUSES
+from control_decoration import num_wrong_tries
+
 import requests
 import bs4
 
@@ -44,7 +47,8 @@ class HabrParser:
 
     # TODO: Ретрай при недоступности с контролем количества
     # TODO: Предусмотреть количество плохих повторений циклов
-    def _get_response(self, url, complete_statuses):
+    @num_wrong_tries
+    def _get_response(self, url):
         while True:
             next_time = self.__parse_time + self.delay
             now_time = time.time()
@@ -52,13 +56,13 @@ class HabrParser:
                 time.sleep(next_time - now_time)
             response = requests.get(url)
             self.__parse_time = now_time
-            if response.status_code in complete_statuses:
+            if response.status_code in COMPLETE_STATUSES:
                 return response
 
     # TODO: Реализовать набор статусов не хардкодно и гибко
     # TODO: Обработка ошибки создания Супа
     def get_soup(self, url):
-        response = self._get_response(url, [200])
+        response = self._get_response(url)
         soup = bs4.BeautifulSoup(response.text, "lxml")
         return soup
 
@@ -80,6 +84,7 @@ class HabrParser:
         title = soup.find("h1", attrs={'class': 'tm-article-snippet__title'}).text
         published_date = datetime.fromisoformat(soup.find('time').attrs.get('datetime')[:-1])
         author_tag = soup.find('a', attrs={'class': "tm-user-info__username"})
+        tags = [link.text for link in soup.find_all('li', attrs={'class': 'tm-separated-list__item'})]
         print(1)
 
 

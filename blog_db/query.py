@@ -1,4 +1,4 @@
-from data_base import models
+from blog_db import models
 
 # def author_tags(session, author_id):
 #     author_articles = session.query(models.Article.id).filter(models.Author.id == author_id).all()
